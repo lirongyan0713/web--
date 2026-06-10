@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算支付 · 二手盲盒平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="site-name">🎁 二次惊喜 · <span>二手盲盒平台</span></div>
+    <div class="top-right">
+        <a href="login.html" id="loginOrProfileLink" class="login-link">🔐 登录/注册</a>
+        <a href="cart.html" class="cart-icon-link" id="cartLink">🛒 购物车</a>
+        <div class="student-info">👩‍🎓 李镕妍 | 学号：24215220110 | 24网络1班</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="checkout-header">
+        <h2>💳 订单结算</h2>
+        <span class="checkout-step">确认支付</span>
+    </div>
+
+    <!-- 订单信息 -->
+    <div class="checkout-order-info" id="orderInfo">
+        <div class="loading">加载订单中...</div>
+    </div>
+
+    <!-- 支付方式 -->
+    <div class="payment-section">
+        <h3>选择支付方式</h3>
+        <div class="payment-options-simple">
+            <label class="payment-option-simple">
+                <input type="radio" name="payment" value="微信支付" checked>
+                <span>📱 微信支付</span>
+            </label>
+            <label class="payment-option-simple">
+                <input type="radio" name="payment" value="支付宝">
+                <span>💰 支付宝</span>
+            </label>
+            <label class="payment-option-simple">
+                <input type="radio" name="payment" value="银行卡">
+                <span>💳 银行卡</span>
+            </label>
+        </div>
+    </div>
+
+    <!-- 支付按钮 -->
+    <div class="checkout-actions">
+        <button class="back-order-btn" id="backOrderBtn">返回订单页</button>
+        <button class="pay-btn" id="payBtn">立即支付</button>
+    </div>
+</div>
+
+<footer>
+    © 二次惊喜 · 二手盲盒交易
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 · 二手盲盒平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="top-bar">
+    <div class="site-name">🎁 二次惊喜 · <span>二手盲盒平台</span></div>
+    <div class="top-right">
+        <a href="index.html" class="home-link">🏠 首页</a>
+        <a href="login.html" id="loginOrProfileLink" class="login-link">🔐 登录/注册</a>
+        <a href="cart.html" class="cart-icon-link">🛒 购物车</a>
+        <div class="student-info">👩‍🎓 李镕妍 | 学号：24215220110 | 24网络1班</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="cart-header">
+        <h2>🛒 我的购物车</h2>
+        <button id="clearCartBtn" class="clear-cart-btn">清空购物车</button>
+    </div>
+
+    <div id="cartContainer">
+        <div class="loading">加载购物车中...</div>
+    </div>
+
+    <div class="cart-summary" id="cartSummary" style="display: none;">
+        <div class="summary-left">
+            <span>共 <span id="totalCount">0</span> 件商品</span>
+        </div>
+        <div class="summary-right">
+            <span class="total-price">合计：¥<span id="totalPrice">0</span></span>
+            <button id="checkoutBtn" class="checkout-btn">去结算</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 二次惊喜 · 二手盲盒交易 | 真实捡漏 欧气传递
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

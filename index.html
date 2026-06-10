@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次惊喜 · 二手盲盒平台</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="site-name">🎁 二次惊喜 · <span>二手盲盒平台</span></div>
+    <div class="top-right">
+        <a href="login.html" id="loginOrProfileLink" class="login-link">🔐 登录/注册</a>
+        <a href="cart.html" class="cart-icon-link" id="cartLink">🛒 购物车</a>
+        <div class="student-info">👩‍🎓 李镕妍 | 学号：24215220110 | 24网络1班</div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 分类导航 -->
+    <div class="category-nav" id="categoryNav">
+        <button class="category-btn active" data-cat="all">全部</button>
+        <button class="category-btn" data-cat="盲盒">✨ 潮玩盲盒</button>
+        <button class="category-btn" data-cat="手办">🎎 手办雕像</button>
+        <button class="category-btn" data-cat="一番赏">🎴 一番赏</button>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 搜索盲盒 / 系列 / 角色...">
+            <button id="searchBtn">搜索</button>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slides" id="carouselSlides"></div>
+            <button class="carousel-btn prev" id="prevBtn">‹</button>
+            <button class="carousel-btn next" id="nextBtn">›</button>
+            <div class="dots" id="dotsContainer"></div>
+        </div>
+    </div>
+
+    <h3>🔥 热门二手盲盒</h3>
+    <div class="products-grid" id="productsGrid">
+        <div class="loading">加载二手好物中...</div>
+    </div>
+</div>
+
+<footer>
+    © 二次惊喜 · 二手盲盒交易 | 真实捡漏 欧气传递
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
